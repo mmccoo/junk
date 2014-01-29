@@ -14,10 +14,10 @@ If your work environment sits behind a proxy/firewall, there are a couple step y
 
 2. if you're behind a firewall, you'll need something like this in your ~/.ssh2/ssh2_config file:
 
-'''
+```
     github.com:
         ProxyCommand  socat - socks4a:proxy-socks.fm.intel.com:%h:%p
-'''
+```
 
 3) test that your basic setup is ok:
 
