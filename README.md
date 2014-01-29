@@ -11,11 +11,11 @@ If your work environment sits behind a proxy/firewall, there are a couple step y
     1. your current keys are stored here: https://github.com/settings/ssh
     2. generate an ssh key if you don't alreay have one: 
 
-    ssh-keygen2 -t rsa -o id_rsa_2048_a
+        ssh-keygen2 -t rsa -o id_rsa_2048_a
 
     3. add a new key by pasting to "Add SSH Key" under "Key" the result of this cmd: 
 
-    ssh-keygen2 -H ~/.ssh2/id_rsa_2048_a.pub -o /dev/stdout
+        ssh-keygen2 -H ~/.ssh2/id_rsa_2048_a.pub -o /dev/stdout
 
 2. if you're behind a firewall, you'll need something like this in your ~/.ssh2/ssh2_config file:
 
